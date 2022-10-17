@@ -11,7 +11,12 @@ def __plot(list_of_alg):
         name = algorithm[0]
         data = algorithm[1]
         time = algorithm[2]
-        plt.plot(data, time, markersize=20, label=name)
+
+        default_x_ticks = range(len(data))
+        plt.xticks(default_x_ticks, data)
+
+        plt.plot(default_x_ticks, time, markersize=20, label=name)
+    plt.title("Insertion Sort Recursive x Merge Sort")
     plt.xlabel("Array length")
     plt.ylabel("Time in second")
     plt.legend()
