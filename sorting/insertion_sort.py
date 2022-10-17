@@ -1,11 +1,11 @@
 # Insertion Sort Algorithms
 
 
-def sort(arr, recursive=False):
+def sort(arr, size, recursive=False):
     if recursive:
-        __insertion_sort(arr, len(arr))
+        __insertion_sort(arr, size)
     else:
-        __insertion_sort(arr, len(arr))
+        __insertion_sort(arr, size)
 
 
 def __insertion_sort(arr, size):

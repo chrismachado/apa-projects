@@ -1,8 +1,8 @@
 # Merge Sort Algorithms
 
 
-def sort(arr):
-    __merge_sort(arr, len(arr))
+def sort(arr, size, **kwargs):
+    __merge_sort(arr, size)
 
 
 def __merge_sort(arr, size):
