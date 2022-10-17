@@ -1,9 +1,11 @@
+import sys
+sys.setrecursionlimit(90000)
 # Insertion Sort Algorithms
 
 
-def sort(arr, size, recursive=False):
+def sort(arr, size, recursive=False, **kwargs):
     if recursive:
-        __insertion_sort(arr, size)
+        __insertion_sort_recursive(arr, size)
     else:
         __insertion_sort(arr, size)
 
