@@ -12,5 +12,7 @@ def __plot(list_of_alg):
         data = algorithm[1]
         time = algorithm[2]
         plt.plot(data, time, markersize=20, label=name)
+    plt.xlabel("Array length")
+    plt.ylabel("Time in second")
     plt.legend()
     plt.show()
