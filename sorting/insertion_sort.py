@@ -1,7 +1,7 @@
 # Insertion Sort Algorithms
 
 
-def sort(arr, size, recursive=False):
+def sort(arr, size, recursive=False, **kwargs):
     if recursive:
         __insertion_sort(arr, size)
     else:

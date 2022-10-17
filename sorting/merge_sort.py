@@ -15,7 +15,7 @@ def __merge_sort(arr, size):
         __merge_sort(rarr, len(rarr))
 
         # merging
-        i, j, k = 0, 0, 0
+        i = j = k = 0
         while i < len(larr) and j < len(rarr):
             if larr[i] < rarr[j]:
                 arr[k] = larr[i]
