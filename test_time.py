@@ -28,7 +28,7 @@ if __name__ == '__main__':
         "insertion_sort_r": insertion_sort.sort,
         "merge_sort": merge_sort.sort,
     }
-
+    print(f"Número de entradas:{array_ninputs}")
     for name, sort in algorithms.items():
         print("Algorithm: %s" % name)
         print("|", end='')
